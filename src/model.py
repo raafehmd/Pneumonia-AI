@@ -3,7 +3,7 @@ from keras._tf_keras.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, D
 from keras._tf_keras.keras.optimizers import Adam
 
 class PneumoniaClassifier:
-    def __init__(self, input_shape=(150, 150, 3)):
+    def __init__(self, input_shape=(150, 150, 1)):
         self.model = self._build_model(input_shape)
 
     def _build_model(self, input_shape):
