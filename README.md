@@ -80,11 +80,7 @@ streamlit run app.py
 -  Launch the app using the command above.
 -  Your browser will open a local Streamlit web interface.
 -  Upload one or more lung X-ray images (JPG or PNG format).
--  Click "Predict".
--  The app will:
--  Analyze each image with a pretrained model
--  Display the probability of pneumonia
--  Use Prolog rules to offer logical medical advice
+-  Click "Run AI".
 
 ## 📦 Technologies Used
 
