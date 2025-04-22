@@ -1,4 +1,4 @@
-import streamlit as st
+import streamlit as st # type: ignore
 import asyncio
 from keras._tf_keras.keras.models  import load_model
 from keras._tf_keras.keras.preprocessing import image
@@ -11,11 +11,10 @@ st.set_page_config(page_title="Pneumonia AI Predictor", page_icon="", layout="wi
 #st.image("canadian-university-dubai-seeklogo.png", use_container_width=True)
 
 
-st.title("Pneumonia AI Predictor")
-st.write("Enter your Image to identify")
+st.title("🫁 Pneumonia AI Predictor")
 
 # Sidebar for inputs
-uploaded_scan = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
+uploaded_scan = st.file_uploader("", type=["jpg", "jpeg", "png"])
 if uploaded_scan is not None:
     l_image = Image.open(uploaded_scan)
     st.image(l_image, caption="Uploaded Image", width=300)
@@ -26,14 +25,13 @@ if st.button("Run AI"):
     if uploaded_scan:
         try:
             with st.spinner("Analyzing image..."):                
-                prob, label = asyncio.run(main(uploaded_scan))
+                prediction = asyncio.run(main(uploaded_scan))
                 pass
             
-            if (prob):
+            if (prediction):
                 # Result of AI prediction
                 st.success("Image processed successfully!")
-                st.write(f"Prediction: {label}")
-                st.write(f"Probability of Pneumonia: {prob*100:.2f}%")
+                st.write(prediction)
                 
             else:
                 st.warning("Image was not processed successfully, please try again.")

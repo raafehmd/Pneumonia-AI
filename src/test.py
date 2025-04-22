@@ -3,7 +3,7 @@ from preprocessing import load_data
 from evaluation import evaluate_model
 
 # Load model
-model = load_model("pneumonia_model.h5")
+model = load_model("saved_models\pneumonia_model.h5")
 
 # Load test data
 _, _, test_data = load_data("D:\OneDrive - Canadian University Dubai\CUD\SPRING 2024\Programming Paradigms\Pneumonia-AI\data\chest_xray")
