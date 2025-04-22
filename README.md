@@ -12,13 +12,13 @@ A powerful AI-driven healthcare tool that detects pneumonia from chest X-ray ima
 
 ## 💡 Project Description
 
-This is a final-year university project that explores multiple programming paradigms:
+This is a university project that explores multiple programming paradigms:
 
 -  🧮 **Procedural** (Data preprocessing with `ImageDataGenerator`)
 -  🧱 **Object-Oriented** (CNN model wrapped in a Python class)
 -  🧠 **Logical** (Medical recommendations using Prolog)
 
-It uses a pretrained model to analyze lung X-ray images and determine the probability of pneumonia, and then provides rule-based guidance using logical programming.
+It trains a model and uses it to analyze lung X-ray images and determine the probability of pneumonia, and then provides rule-based guidance using logical programming.
 
 ---
 
@@ -82,9 +82,9 @@ streamlit run app.py
 -  Upload one or more lung X-ray images (JPG or PNG format).
 -  Click "Predict".
 -  The app will:
--                 Analyze each image with a pretrained model
--                 Display the probability of pneumonia
--                 Use Prolog rules to offer logical medical advice
+-                        Analyze each image with a pretrained model
+-                        Display the probability of pneumonia
+-                        Use Prolog rules to offer logical medical advice
 
 ## 📦 Technologies Used
 
