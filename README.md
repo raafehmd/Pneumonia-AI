@@ -135,7 +135,7 @@ If you wish to retrain or fine-tune the model:
 Save the model using:
 
 ```
-model.save("saved_model/pneumonia_model.h5")
+model.save("saved_models/pneumonia_model.h5")
 ```
 
 -  The Streamlit app will automatically use the saved model.
