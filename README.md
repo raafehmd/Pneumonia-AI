@@ -49,7 +49,7 @@ Make sure you have **Python 3.10+** installed.
 ### 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/pneumonia-ai.git
+git clone https://github.com/raafehmd/pneumonia-ai.git
 cd pneumonia-ai
 ```
 
@@ -79,18 +79,17 @@ streamlit run app.py
 
 -  Launch the app using the command above.
 -  Your browser will open a local Streamlit web interface.
--  Upload one or more lung X-ray images (JPG or PNG format).
+-  Upload a lung X-ray image (JPG or PNG format).
 -  Click "Run AI".
 
 ## 📦 Technologies Used
 
--  Category Tools/Frameworks
--  Language Python, Prolog
--  Machine Learning TensorFlow / Keras
--  GUI/Web Interface Streamlit
--  Image Processing Keras ImageDataGenerator
--  Logic Programming SWI-Prolog
--  Utilities NumPy, scikit-learn, PIL
+-  Languages: Python, Prolog
+-  Machine Learning: TensorFlow / Keras
+-  GUI/Web Interface: Streamlit
+-  Image Processing: Keras ImageDataGenerator
+-  Logic Programming: SWI-Prolog
+-  Utilities: NumPy, scikit-learn, PIL
 
 ## 🗂️ Project Structure
 
@@ -104,7 +103,7 @@ streamlit run app.py
 │ ├── prolog_interface.py
 │ ├── app.py
 │ └── rules.pl
-├── saved_model/
+├── saved_models/
 │ └── pneumonia_model.h5
 ├── data/
 │ └── chest_xray/ (dataset directory)
@@ -114,9 +113,9 @@ streamlit run app.py
 
 ## 📊 Sample Output
 
-Image Name | Probability | Prediction | Logical Advice
-person1_virus_6.jpeg | 0.89 | Pneumonia | Seek further medical evaluation.
-person2_bacteria.jpeg | 0.12 | Normal | Continue routine health monitoring.
+Image Name             | Probability | Prediction | Logical Advice
+person1_virus_6.jpeg   | 0.89        | Pneumonia  | Seek further medical evaluation.
+person2_bacteria.jpeg  | 0.12        | Normal     | Continue routine health monitoring.
 
 ## 📈 Future Improvements
 
